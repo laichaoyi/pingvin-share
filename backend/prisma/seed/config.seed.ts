@@ -12,7 +12,7 @@ const configVariables: ConfigVariables = {
   general: {
     appName: {
       type: "string",
-      defaultValue: "Pingvin Share",
+      defaultValue: "Heavy Rain Share",
       secret: false,
     },
     appUrl: {
@@ -66,7 +66,7 @@ const configVariables: ConfigVariables = {
     shareRecipientsMessage: {
       type: "text",
       defaultValue:
-        "Hey!\n\n{creator} shared some files with you, view or download the files with this link: {shareUrl}\n\nThe share will expire {expires}.\n\nNote: {desc}\n\nShared securely with Pingvin Share 🐧",
+        "Hey!\n\n{creator} shared some files with you, view or download the files with this link: {shareUrl}\n\nThe share will expire {expires}.\n\nNote: {desc}\n\nShared securely with Heavy Rain Share 🐧",
     },
     reverseShareSubject: {
       type: "string",
@@ -75,25 +75,25 @@ const configVariables: ConfigVariables = {
     reverseShareMessage: {
       type: "text",
       defaultValue:
-        "Hey!\n\nA share was just created with your reverse share link: {shareUrl}\n\nShared securely with Pingvin Share 🐧",
+        "Hey!\n\nA share was just created with your reverse share link: {shareUrl}\n\nShared securely with Heavy Rain Share 🐧",
     },
     resetPasswordSubject: {
       type: "string",
-      defaultValue: "Pingvin Share password reset",
+      defaultValue: "Heavy Rain Share password reset",
     },
     resetPasswordMessage: {
       type: "text",
       defaultValue:
-        "Hey!\n\nYou requested a password reset. Click this link to reset your password: {url}\nThe link expires in a hour.\n\nPingvin Share 🐧",
+        "Hey!\n\nYou requested a password reset. Click this link to reset your password: {url}\nThe link expires in a hour.\n\nHeavy Rain Share 🐧",
     },
     inviteSubject: {
       type: "string",
-      defaultValue: "Pingvin Share invite",
+      defaultValue: "Heavy Rain Share invite",
     },
     inviteMessage: {
       type: "text",
       defaultValue:
-        "Hey!\n\nYou were invited to Pingvin Share. Click this link to accept the invite: {url}\n\nYour password is: {password}\n\nPingvin Share 🐧",
+        "Hey!\n\nYou were invited to Heavy Rain Share. Click this link to accept the invite: {url}\n\nYour password is: {password}\n\nHeavy Rain Share 🐧",
     },
   },
   smtp: {
@@ -231,7 +231,7 @@ const prisma = new PrismaClient({
     db: {
       url:
         process.env.DATABASE_URL ||
-        "file:../data/pingvin-share.db?connection_limit=1",
+        "file:../data/Heavy Rain-share.db?connection_limit=1",
     },
   },
 });
