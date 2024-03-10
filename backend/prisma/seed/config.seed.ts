@@ -44,7 +44,7 @@ const configVariables: ConfigVariables = {
     },
     maxSize: {
       type: "number",
-      defaultValue: "1000000000",
+      defaultValue: "50000000000",
       secret: false,
     },
     zipCompressionLevel: {
