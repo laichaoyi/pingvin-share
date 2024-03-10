@@ -18,16 +18,16 @@ export default {
 
   "home.description":
     "Do you really want to give your personal files in the hand of third parties like WeTransfer?",
-  "home.bullet.a.name": "Self-Hosted",
-  "home.bullet.a.description": "Host Pingvin Share on your own machine.",
+  "home.bullet.a.name": "How to get account?",
+  "home.bullet.a.description": "Contact Andy@heavyrain.vip for register an account.",
   "home.bullet.b.name": "Privacy",
   "home.bullet.b.description":
     "Your files are your files and should never get into the hands of third parties.",
   "home.bullet.c.name": "No annoying file size limit",
   "home.bullet.c.description":
-    "Upload as big files as you want. Only your hard drive will be your limit.",
+    "Upload as big files as you want. Only Administrators can limit your storage.",
 
-  "home.button.start": "Get started",
+  "home.button.start": "Get started (disabled)",
   "home.button.source": "Source code",
   // END /
 
@@ -380,13 +380,13 @@ export default {
   "admin.config.general.app-name.description": "Name of the application",
   "admin.config.general.app-url": "App URL",
   "admin.config.general.app-url.description":
-    "On which URL Pingvin Share is available",
+    "On which URL Heavy Rain Share is available",
   "admin.config.general.show-home-page": "Show home page",
   "admin.config.general.show-home-page.description":
     "Whether to show the home page",
   "admin.config.general.logo": "Logo",
   "admin.config.general.logo.description":
-    "Change your logo by uploading a new image. The image must be a PNG and should have the format 1:1.",
+    "Change your logo by uploading a new image. The image must be a PNG and should have the square format 1:1.",
   "admin.config.general.logo.placeholder": "Pick image",
 
   "admin.config.email.enable-share-email-recipients":
