@@ -1,19 +1,17 @@
-version: '3.8'
+version: "3.9"
 services:
-  pingvin-share:
-    image: stonith404/pingvin-share
-    restart: unless-stopped
+  pingvin:
+    container_name: Pingvin-Share
+    image: laichaoyi/pingvin-share
+    healthcheck:
+     test: curl -f http://localhost:3000/ || exit 1
+    mem_limit: 2g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    restart: on-failure:5
     ports:
-      - 3000:3000
+      - 6090:3000
     volumes:
-      - "./data:/opt/app/backend/data"
-      - "./data/images:/opt/app/frontend/public/img"
-# Optional: If you add ClamAV, uncomment the following to have ClamAV start first.
-#    depends_on:
-#      clamav:
-#        condition: service_healthy
-# Optional: Add ClamAV (see README.md)  
-# ClamAV is currently only available for AMD64 see https://github.com/Cisco-Talos/clamav/issues/482
-#  clamav:
-#    restart: unless-stopped
-#    image: clamav/clamav
+      - /volume1/docker/pingvin:/opt/app/backend/data:rw
+      - /volume1/docker/pingvin/public:/opt/app/frontend/public/img:rw
